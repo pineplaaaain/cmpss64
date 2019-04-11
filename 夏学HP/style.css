@@ -1,0 +1,982 @@
+@media screen and (min-width: 769px) {
+
+
+/*はじめから書かれていた余白についての設定*/
+body, div, pre, p, blockquote, form,
+dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, embed, object { 
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline; 
+}
+
+/* --- body全体についての設定 --- */
+body {
+	background: #29638d;
+	font-family: arial;
+}
+
+
+/*文字指定の場所*/
+/*先頭の1文字が大きい見出し*/
+h2 {
+	position: relative;
+	/*z-index: -1;*/
+	padding: 0.2em 0;
+	margin-bottom: 0.8em;
+}
+h2:after {
+	content: "";
+	display: block;
+	height: 4px;
+	background: -moz-linear-gradient(to right, rgb(125, 137, 255), transparent);
+	background: -webkit-linear-gradient(to right, rgb(125, 137, 255), transparent);
+	background: linear-gradient(to right, rgb(125, 137, 255), transparent);
+}
+h2:first-letter {
+	color: #7d89ff;
+	font-size: 1.5em;
+}
+
+/*丸ではさんだ見出し*/
+h3.maru {
+	position: relative;
+	display: inline-block;
+	line-height: 1.4em;
+}
+h3.maru:before, h3.maru:after {
+	font-family: FontAwesome;
+	position: relative;
+	display: inline-block;
+	font-size: 1.1em;
+	color: #7d89ff;
+}
+h3.maru:before {
+	content: "\f111";
+	padding-right: 0.1em;
+}
+h3.maru:after {
+	content: "\f111";
+	padding-left: 0.1em;
+}
+
+/*文字の両側に線を伸ばす見出し*/
+h3.line {
+	position: relative;
+	display: inline-block;
+	padding: 0  300px;
+}
+h3.line:before,
+h3.line:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	width: 295px;
+	height: 1px;
+	background-color: #dcdcdc;
+}
+h3.line:before {
+	left: 0;
+}
+h3.line:after {
+	right: 0;
+}
+
+/*中見出し用*/
+h4 {
+	position: relative;
+	/*z-index: -1;*/
+	padding-left: 1.1em;
+	font-size: 1.1em;
+	line-height: 1.3;
+}
+h4:before {
+	font-family: FontAwesome;
+	content: "\f041";
+	position: absolute;
+	font-size: 1.2em;
+	bottom: 0;
+	left: 0;
+	color: #7d89ff;
+}
+
+/*蛍光ペンのような強調*/
+.markerlike { /*シアン*/
+	background: -moz-linear-gradient(transparent 40%, lightcyan 0%);
+	background: -weblit-linear-gradient(transparent 40%, lightcyan 0%);
+	background: linear-gradient(transparent 40%, lightcyan 0%);
+}
+.markerlike2 { /*つつじ*/
+	background: -moz-linear-gradient(transparent 95%, #e95259 0%);
+	background: -weblit-linear-gradient(transparent 95%, #e95259 0%);
+	background: linear-gradient(transparent 95%, #e95259 0%);
+}
+
+/*注意書で使う色コード---#e95259*/
+
+ /*本文中の行間*/
+#introduction p,
+#container p,
+#content p {
+	line-height: 1.6;
+}
+
+/*注意書き用の小さな文字*/
+p6 {
+	font-size: 12px;
+}
+
+/*少し小さく*/
+p2 {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/*長い文章で主に使う*/
+p4 {
+	line-height: 30px; 
+	font-size:20px;
+	font-weight:bold;
+	color: #c71585;
+}
+
+
+/*floatの解除コマンド*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    min-height: 1px;
+}
+
+
+
+
+
+
+
+/* --- ページ先頭の画像とタイトル --- */
+#pagetop {
+	position: relative;
+}
+#pagetop img {
+	width: 100%;
+}
+
+#pagetop table.title tr td.kaisuu {
+	color: #16098a;
+	font-weight: bold;
+	font-family: arial;
+	text-shadow:
+		-1px -1px 0px white,
+		1px -1px 0px white,
+		1px 1px 0px white,
+		-1px 1px 0px white;
+	line-height: 50%;
+}
+#pagetop table.title tr td.cmpss {
+	color: #16098a;
+	font-weight: bold;
+	font-family: arial;
+	text-shadow:
+		-1px -1px 0px white,
+		1px -1px 0px white,
+		1px 1px 0px white,
+		-1px 1px 0px white;
+	line-height: 150%;
+}
+#pagetop table.title tr td.english {
+	color: #16098a;
+	font-family: serif;
+	line-height: 0%;
+}
+
+#pagetop table.catch {
+	position: absolute;
+	top: 15%;
+	right:3%;
+	margin: 0;
+	padding: 0;
+}
+#pagetop table.catch tr td.catchphrase {
+	text-align: right;
+	color: #16098a;
+	font-weight: bold;
+	font-size: 2.5em;
+	font-family: cursive;
+	line-height: 125%;
+}
+#pagetop table.catch tr td.kaijou {
+	text-align: right;
+	color: #16098a;
+	font-weight: bold;
+	font-size: 1em;
+	font-family: arial;
+}
+#pagetop table.catch tr td.nichiji {
+	text-align: right;
+	color: #6d2706;
+	font-weight: bold;
+	font-size: 1em;
+	font-family: Gramond;
+}
+
+
+
+
+
+
+/* --- ドロップダウンメニュー --- */
+#gmenu {
+	background-image: url(./picture/menu4.svg);
+	background-size: cover;
+}
+#gmenu ul.ddmenu {
+	*zoom: 1;
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 95%;
+}
+#gmenu .ddmenu:before, .ddmenu:after {
+	content: "";
+	display: table;
+}
+#gmenu .ddmenu:after {
+	clear: both;
+}
+#gmenu ul.ddmenu li {
+	position: relative;
+	width: 25%;
+	float: left;
+	background: rgba(255, 255, 255, 0);
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	text-align: center;
+}
+#gmenu ul.ddmenu li a {
+	display: block;
+	margin: 0;
+	padding: 0.3em 0 0.2em;
+	color: #f8f8ff;
+	font-size: 1em;
+	font-family: arial;
+	line-height: 1.5em;
+	text-decoration: none;
+}
+#gmenu ul.ddmenu li ul {
+	list-style: none;
+	position: absolute;
+	z-index: 9999;
+	top: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+#gmenu ul.ddmenu li ul li {
+	overflow: hidden;
+	height: 0;
+	width: 100%;
+	transition: .2s
+}
+#gmenu ul.ddmenu li ul li a {
+	padding: 0.3em 1em;
+	border-top: 1px solid #f8f8ff;
+	color: #f8f8ff;
+	font-size: 1em;
+	font-family: arial;
+	text-align: left;
+}
+#gmenu ul.ddmenu li:hover ul li {
+	overflow: visible;
+	height: 2em;
+	background: #000033;
+}
+#gmenu ul.ddmenu li:hover ul li:last-child {
+	border-bottom: 0;
+}
+#gmenu ul.ddmenu a:hover{
+	background: rgba(255, 255, 255, 0.3);
+}
+#gmenu .fa {
+	color: #f8f8ff;
+	font-size: 1.3em;
+}
+
+
+
+
+
+
+
+/*ページトップに戻るボタン・講師一覧ページ*/
+#topbtn {
+	position: fixed;
+	bottom: 70px;
+	right: 5%;
+	z-index: 999;
+	display: block;
+	text-decoration: none;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	font-family: Garamond;
+	font-size: 12px;
+	font-weight: bold;
+	color: #f8f8ff;
+	background-color: #0f2350;
+	overflow: hidden;
+}
+#topbtn:hover {
+	background-color: #bbc8e6;
+}
+
+
+
+
+
+
+/* --- トップページ --- */
+#introduction {
+	margin-top: 2em;
+	margin-bottom: 2.5em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 4%;
+	width: 80%;
+	font-size: 90%;
+	background-color: white;
+	border: 1px #dcdcdc solid;
+}
+
+
+
+
+
+
+
+/* --- 1カラム用メイン部分 --- */
+#container {
+	padding: 10px 3% 3em;
+	width: 88%;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 1px #dcdcdc solid;
+	font-size: 90%;
+}
+
+
+
+
+/*テーブルコンテンツの設定場所*/
+/*歴代講師ページ*/
+table.ichiran {
+	margin-top: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	border: 2px black solid;
+	border-collapse: collapse;   
+}
+table.ichiran th {
+	background: lightcyan;
+	border: 2px black solid;
+	font-weight: normal;
+	line-height: 1.8;
+}
+table.ichiran tr td {
+	text-align: center;
+	border: 1px black solid;
+	font-size: 95%;
+	line-height: 1.8;
+}
+
+
+/*歴代講師紹介ページ・一般*/
+table.lecture {
+	margin-top: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	border: 2px black solid;
+	border-collapse: collapse;
+}
+table.lecture th {
+	background: lightcyan;
+	border-bottom: 2px black solid;
+	border-right: 1px black solid;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.6;
+}
+table.lecture th:last-child {
+	border-right: none
+}
+table.lecture tr td {
+	text-align: left;
+	padding: 3px 8px;
+	border: 1px solid black;
+	font-size: 14px;
+	line-height: 1.6;
+}
+table.lecture tr td:first-child {
+	width: 90px
+}
+
+
+/*歴代講師紹介ページ・サイズ調整可*/
+table.lecture2 {
+	margin-top: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px black solid;
+	border-collapse: collapse;
+}
+table.lecture2 th {
+	background: lightcyan;
+	border-bottom: 2px black solid;
+	border-right: 1px black solid;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.6;
+}
+table.lecture2 th:last-child {
+	border-right: none
+}
+table.lecture2 tr td {
+	text-align: left;
+	padding: 3px 8px;
+	border: 1px solid black;
+	font-size: 14px;
+	line-height: 1.6;
+}
+table.lecture2 tr td:first-child {
+	width: 90px
+}
+
+
+/*歴代講師紹介ページ・one-column*/
+table.lecture3 {
+	margin-top: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+	border: 2px black solid;
+	border-collapse: collapse;
+}
+table.lecture3 th {
+	background: lightcyan;
+	border-bottom: 2px black solid;
+	border-right: none;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.6;
+}
+table.lecture3 tr td {
+	text-align: left;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	border: 1px solid black;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+
+/*スタッフ紹介ページ・共通*/
+table.staff {
+	margin-top: 2.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px black solid;
+	border-collapse: collapse;
+}
+table.staff th {
+	background: lightcyan;
+	border: 2px black solid;
+	line-height: 1.8;
+}
+table.staff tr td {
+	border: 1px black solid;
+	padding-left: 5px;
+	line-height: 1.9;
+}
+table.staff tr td:last-child {
+	padding: 0;
+	text-align: center;
+}
+
+
+/*協賛依頼ページ*/
+table.cosponsorship {
+	margin-top: 1.5em;
+	margin-bottom: 4em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	border: 2px black solid;
+	border-collapse: collapse;
+}
+table.cosponsorship th {
+	background: lightcyan;
+	border-bottom: 2px black solid;
+	border-right: 1px black solid;
+	font-weight: normal;
+	line-height: 1.8;
+}
+table.cosponsorship th:last-child {
+	border-right: none;
+}
+table.cosponsorship tr td {
+	border: 1px black solid;
+	padding: 2px 8px;
+	text-align: left;
+	line-height: 1.8;
+}
+
+
+/*プログラムページ*/
+table.schedule {
+	margin: 1.5em auto 2.5em;
+	width: 85%;
+	border: 2px black solid;
+	border-collapse: collapse;
+}
+table.schedule th {
+	border-right: 1px black solid;
+	border-bottom: 2px black solid;
+	background: lightcyan;
+	font-weight: normal;
+}
+table.schedule th:first-child {
+	border-right: 2px black solid;
+}
+table.schedule th:last-child {
+	border-right: none;
+}
+table.schedule tr td {
+	text-align: center;
+	border: 1px black solid;
+	height: 4em;
+}
+table.schedule tr td:first-child {
+	background: lightcyan;
+	border-right: 2px black solid;
+}
+
+
+
+
+/* --- 2カラム用メイン部分 --- */
+#main {
+	margin-top: 2em;
+	padding: 0;
+	width: 100%;
+	font-size: 90%;
+}
+
+/* --- メインカラム --- */
+#content {
+	margin-left: 3%;
+	padding: 10px 3%;
+	float: left;
+	width: 57%;
+	background-color: white;
+	border: 1px #dcdcdc solid;
+}
+
+/* 広告欄 */
+#content div.adv {
+	width: 100%;
+	height: 350px;
+	margin-top: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	color: darkgray;
+}
+div.adv table {
+	margin: auto;
+	width: 90%;
+}
+div.adv table tr td.fix {
+	width: 50%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;
+}
+div.adv table tr td.rot {
+	width: 50%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;
+}
+
+/* --- サイドバー --- */
+#side {
+	margin-left: 2%;
+	padding: 12px 2%;
+	float: left;
+	width: 25%;
+	font-size: 90%;
+	background-color: white;
+	border: 1px #dcdcdc solid;
+}
+
+/*お知らせ欄*/
+#osirase {
+	width: 95%;
+	margin-top: 8px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+#osirase ul {
+	margin: 0 0 0 1em;
+	padding: 0;
+}
+#osirase ul li {
+	line-height: 1.5;
+}
+
+
+
+/* --- メールアドレスを枠で囲む --- */
+div.mailadd {
+	margin-top: 0.5em;
+	line-height: 2.5em;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px black solid;
+	border-radius: 4px;
+}
+
+
+
+/* --- フッターの設定 --- */
+footer a {
+	color: #f8f8ff;
+	text-decoration: none;
+}
+#foot {
+	margin-top: 50px;
+	padding: 10px 20px;
+	background: #000033;
+	color: #f8f8ff;
+	background-image: url(./picture/footer.png);
+	background-size: cover;
+}
+
+#foot ul.sitemap {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	color: #f8f8ff;
+	font-family: serif;
+	font-weight: normal;
+}
+#foot ul.sitemap ul {
+	margin: 0 0 5px;
+	padding: 0;
+	list-style-type: none;
+}
+#foot ul.sitemap li {
+	padding: 0;
+	line-height: 120%;
+	border-bottom: none;
+}
+
+#foot ul.sitemap div.contents {
+	width: 100%;
+	margin: 0;
+	padding-top: 10px;
+	border-top: 1px #f8f8ff solid;
+	border-bottom: 1px #f8f8ff solid;
+}
+
+#foot ul.sec {
+	margin: 0;
+	width: 20%;
+	float: left;
+}
+#foot ul.sec li {
+	margin-bottom: 20px;
+	padding: 0;
+	font-size: 90%;
+	border-bottom: none;
+}
+#foot ul.sec li:last-child {
+	margin-bottom: 0;
+}
+#foot ul.sec li ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#foot ul.sec li ul li {
+	margin-top: 5px;
+	margin-bottom: 0;
+	margin-left: 10px;
+	padding: 0;
+	font-size: 80%;
+	font-family: arial;
+	font-weight: lighter;
+}
+
+#foot ul.info {
+	margin: 0;
+	width: 40%;
+	float: left;
+	font-size: 90%;
+}
+#foot ul.info li {
+	margin-left: 15px;
+	padding: 0;
+}
+#foot div.frame_wrap {
+	overflow: scroll;
+	margin-top: 2px;
+	margin-left: 0;
+	margin-bottom: 0.8em;
+	padding: 0;
+	width: 90%;
+	height: 12em;
+	border: 1px #f8f8ff dotted;
+	border-radius: 5px;
+	font-weight: normal;
+	-webkit-overflow-scrolling: touch;
+}
+
+#foot ul.contact {
+	margin: 0;
+	width: 20%;
+	float: left;
+	font-size: 90%;
+}
+#foot ul.contact li {
+	margin-bottom: 1em;
+	margin-left: 10px;
+	padding: 0;
+}
+#foot ul.contact li ul {
+	margin-top: 8px;
+	padding: 0;
+	width: 100%;
+}
+#foot ul.contact li ul li {
+	margin: 0;
+	padding: 0;
+}
+#foot ul.contact li ul li a.kakomi {
+	margin: 0;
+	border: 1px #f8f8ff solid;
+	border-radius: 4px;
+	padding: 5px;
+	font-family: arial;
+	font-size: 80%;
+}
+#foot ul.contact li ul li a.kakomi:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+#foot ul.contact li ul li a.kakomanai {
+	margin: 0;
+	padding: 0 5px;
+	font-family: arial;
+	font-size: 80%;
+}
+
+
+#foot p.foot {
+	margin-top: 10px;
+	padding: 0;
+	text-align: center;
+	font-weight: lighter;
+}
+
+	
+
+
+
+}
+/*mediascreenを閉じる括弧*/
+
+
+
+
+
+
+
+/*使用していないコマンドたち
+
+.nav {
+	padding: 0 5px;
+	margin: 0 auto 0px;
+	width: 99%;
+	font-size: 90%;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background: #F78181;
+}
+.nav li {
+	list-style: none;
+	float: left;
+}
+.nav li a {
+	text-decoration: none;
+	color: #FFF;
+	padding: 5px 8px;
+	display: block;
+	width: 95px;
+}
+.nav li a:hover {
+	background:#bfbfbf;
+}
+
+
+.nav li ul {
+	display: none;
+	position: absolute;
+	font-size: 85%;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.nav li ul li {
+	float: none;
+}
+.nav li ul li a {
+	background: #F78181;
+}
+.nav li ul li:last-child a {
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+}
+
+
+
+
+table.seminer2 {
+	font-size:90%;
+	border-collapse:collapse;
+	padding:10px;
+	margin-left:20px;			   
+}
+table.seminer2 td {
+	text-align:left;
+	border:2px ridge #000000;
+	padding:10px;
+	font-size:90%;
+	background-color:#dee0de;
+}
+
+
+
+
+table.seminer {
+	font-size:90%;
+	border-collapse:collapse;
+	padding:10px;
+	margin-left:20px;			   
+}
+table.seminer th {
+	text-align:center;
+	border:2px ridge #000000;
+	padding:10px;
+	font-size:90%;
+	background-color:#FFE4E1;
+}
+table.seminer td {
+	text-align:left;
+	border:2px ridge #000000;
+	padding:10px;
+	font-size:90%;
+	background-color:#ffffff;
+}
+
+
+
+table.undermenu {
+	border-collapse:collapse;
+	padding-left:10px;
+	margin-left:20px;			   
+}
+table.undermenu th {
+	text-align: left;
+	padding-left: 10px;
+	padding-right:10px;
+	font-size:110%;			 
+}
+table.undermenu td {     
+ 	colspan:5; 
+	text-align:left;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;				
+	font-size:100%;
+}
+
+
+
+
+#article {
+	background: #fff;
+	padding: 60px;
+	margin: 0 auto 0px;
+	width: 700px;
+}
+
+
+
+#banner {
+    border: 0px solid #CCCCCC;
+    overflow: hidden;
+    width:320px;
+    margin-bottom: 5px;
+}
+#banner ul {
+    list-style: none;
+    width: 1280px;
+}
+#banner ul li {
+    float: left;
+    width: 320px;
+}
+#banner ul li img {
+    vertical-align: bottom;
+}
+
+*/
