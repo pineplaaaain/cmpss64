@@ -168,7 +168,7 @@ p4 {
 }
 
 #pagetop table.title tr td.kaisuu {
-	color: #16098a;
+	color: #dad9e6;
 	font-weight: bold;
 	font-family: arial;
 	text-shadow:
@@ -179,7 +179,7 @@ p4 {
 	line-height: 50%;
 }
 #pagetop table.title tr td.cmpss {
-	color: #16098a;
+	color: #d1cfe7;
 	font-weight: bold;
 	font-family: arial;
 	text-shadow:
@@ -190,7 +190,7 @@ p4 {
 	line-height: 150%;
 }
 #pagetop table.title tr td.english {
-	color: #16098a;
+	color: #dcdaee;
 	font-family: serif;
 	line-height: 0%;
 }
@@ -204,7 +204,7 @@ p4 {
 }
 #pagetop table.catch tr td.catchphrase {
 	text-align: right;
-	color: #16098a;
+	color: #e6e5f0;
 	font-weight: bold;
 	font-size: 2.5em;
 	font-family: cursive;
@@ -212,7 +212,7 @@ p4 {
 }
 #pagetop table.catch tr td.kaijou {
 	text-align: right;
-	color: #16098a;
+	color: #dddceb;
 	font-weight: bold;
 	font-size: 1em;
 	font-family: arial;

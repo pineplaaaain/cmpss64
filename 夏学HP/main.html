@@ -89,16 +89,74 @@
 <div class="adv">
 <p style="margin-left: 2em; margin-bottom: 1em;">広告欄</p>
 
-<script>
-	var x = $(window).width()*0.12;
-	var y = $(window).width()*0.24;
-	var z = $(window).width()*0.058;
-	
-	document.write("<map name='Map'>");
-	document.write("<area shape='rect' coords='0,0, "+x+" ,"+z+" ' href='https://www.enago.jp' target='_blank'>");
-	document.write("<area shape='rect' coords=' "+x+" ,0, "+y+" ,"+z+" ' href='https://www.ulatus.jp'  target='_blank'>");
-	document.write("</map>");
-</script>
+<table>
+	<tbody>
+		<tr>
+		<!-- NOK株式会社 -->
+		<td class="fix"><a href="http://www.nok.co.jp" target="_blank"><img src="./picture/64th/NOK.gif" width="98%"></a></td>
+		<!-- 株式会社テクトロニクス -->
+		<td class="fix"><a href="https://jp.tek.com/" target="_blank"><img src="./picture/64th/Tektronix.jpg" width="98%"></a></td>
+		</tr>
+		<tr>
+		<!-- シグマ光機株式会社 -->
+		<td class="fix"><a href="http://www.global-optosigma.com/jp" target="_blank"><img src="./picture/64th/sigmakoki63.jpg" width="98%"></a></td>
+		<!-- ソーラボジャパン株式会社 -->
+		<td class="fix"><a href="https://www.thorlabs.co.jp" target="_blank"><img src="./picture/64th/Thorlabs63.jpg" width="98%"></a></td>
+		</tr>
+		<tr>
+		<!-- 有限会社テクサム -->
+		<td class="fix"><a href="https://www.tecsam.co.jp/" target="_blank"><img src="./picture/64th/TECSAM_logo.gif" width="98%"></a></td>
+		<!-- 株式会社ユニソク -->
+		<!-- グラスマンジャパンハイボルテージ株式会社 -->
+		<!-- Crimson Interactive Pvt. Ltd -->
+		<td class="rot">
+		<script>
+		jmp = new Array();
+		img = new Array();
+		jmp[0] = "http://www.unisoku.co.jp";
+		jmp[1] = "http://www.kagaku.com/glassman";
+		jmp[2] = "https://www.enago.jp/";
+		img[0] = "./picture/64th/unisoku.gif";
+		img[1] = "./picture/64th/glassman_ver2.jpg";
+		img[2] = "./picture/64th/crimson.gif";
+		n = Math.floor(Math.random()*img.length);
+		if (n<3) {
+			document.write("<a href=' "+jmp[n]+" ' target='_blank'>");
+			document.write("<img src=' "+img[n]+" 'width='95%'>");
+			document.write("</a>");
+		}
+		</script>
+		</td>
+		</tr>
+		<tr>
+		<!-- フジトク株式会社 -->
+		<!-- 株式会社東和計測 -->
+		<!-- 有限会社ハヤマ -->
+		<!-- 株式会社Jij -->
+		<td class="rot">
+		<script>
+		// ランダムに画像を表示する
+		jmp = new Array();
+		img = new Array();
+		// ジャンプ先のアドレス(数字は画像と対応)
+		jmp[0] = "http://www.fujitok.co.jp/";
+		jmp[1] = "http://www.touwakeisoku.co.jp";
+		jmp[2] = "http://www.hayama-net.to";
+		jmp[3] = "https://j-ij.com/";
+		// 画像のアドレス(数字はジャンプ先のアドレスと対応)
+		img[0] = "./picture/64th/fujitoku.jpg";
+		img[1] = "./picture/64th/touwa_keisoku.jpg";
+		img[2] = "./picture/64th/hayama.JPG";
+		img[3] = "./picture/64th/banner_Jij.png";
+		n = Math.floor(Math.random()*jmp.length);
+		document.write("<a href=' "+jmp[n]+" ' target='_blank'>");
+		document.write("<img src=' "+img[n]+" ' width='65%'>");
+		document.write("</a>");
+		</script>
+		</td>
+		</tr>
+	</tbody>
+</table>
 
 
 </div>
@@ -112,24 +170,23 @@
 <h3 class="maru">お知らせ</h3><br>
 <div id="osirase">
 	<ul>
-		<li><span style="font-weight: bold;">当サイトは</span>、第64回物性若手夏の学校の本サイト開設前に設けられた<span style="font-weight: bold; color: #e95259">プレサイト</span>です。</li> 
 		<!--<li><a href="./participant/member.html" style="color: #e95259;"><span style="font-weight: bold;">参加者ページ</span></a>を公開しました。</li> -->
-		<!--<li>企業、個人の皆様からの協賛を募集しております。詳しくは<a href="./kyosannegai.html" style="font-weight: bold; color: #e95259;">こちら</a>。</li> -->
+		<li>企業、個人の皆様からの協賛を募集しております。詳しくは<a href="./kyosannegai.html" style="font-weight: bold; color: #e95259;">こちら</a>。</li> 
 		<!--&#8226;2次の<a href="./sankatouroku.html">参加登録</a> を開始しました. 6月16日までです. <br/> -->
 		<!--<li>2次の<a href="./sankatouroku.html">参加登録</a> を終了しました. </li> -->
 		<!--<li><a href="./sankatouroku.html">旅費補助</a>の詳細について追加しました.</li> -->
 		<!--&#8226;5/18 講義・集中ゼミのアブストラクトを更新しました。アブストラクトは<a href="./program/schedule.html">こちら</a><br>
 		&#8226;5/18 夏学Tシャツのデザインを公開しました。夏学Tシャツについては<a href="./others/shirt.html">こちら</a><br> -->
 		<!--<li><a href="./sankatouroku.html" style="font-weight: bold;">第2次参加受け付け</a>を開始いたしました。第2次募集の定員は15名程度になりますので、ご希望の方はお早めにお申し込みください。</li> -->
-		<li><a href="./omimai20180710.html">平成30年7月豪雨による被害へのお見舞い</a></li>
-		<li><a href="./omimai.html">大阪府北部地震による被害へのお見舞い</a></li>
+		<!--<li><a href="./omimai20180710.html">平成30年7月豪雨による被害へのお見舞い</a></li>
+		<li><a href="./omimai.html">大阪府北部地震による被害へのお見舞い</a></li> -->
 		<!--<li>ポスターセッション、および分科会のアブストラクト提出は&nbsp;<span style="font-weight: bold; color: #e95259;">6月22日(金)</span>&nbsp;までです。詳細は<a href="./register/abstract.html">こちら</a>。</li> -->
 		<!--<li>6月15日をもちまして、<span style="font-weight: bold;">本年度の参加申し込み期間は終了いたしました</span>。たくさんのご応募ありがとうございました！</li>-->
 		<!--<li>5月31日をもちまして、第1次参加申し込み期間は終了いたしました。たくさんのご応募ありがとうございました！</li> -->
 		<!--<li>集中ゼミに関する情報、および告知ポスター記載に一部誤りがございました。申し訳ございません。詳細は<a href="./owabi.html">こちら</a>をご覧ください。</li>-->
 		<!--<li><span style="font-weight: bold;">参加登録ページを公開しました。</span>参加についての詳細は<a href="./sankatouroku.html">こちら</a>をご覧ください。</li>
 		<li>参加登録フォームへの<span style="color: #e95259;">直接のリンク</span>は<a href="https://cmpss.jp/registration/reg_html/registration.html" target="_blank">こちら</a>！</li> -->
-		<!--<li>本年度の招待講師一覧は<a href="./others/ss63.html">こちら</a>。</li>-->
+		<!--<li>本年度の招待講師一覧は<a href="./others/ss64.html">こちら</a>。</li>-->
 	</ul>
 </div>
 
