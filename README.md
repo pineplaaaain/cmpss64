@@ -5,7 +5,7 @@
 2019年04月02日
 夏学HPの状態がごちゃごちゃしていて編集しづらいので仕様書を書くことにした.
 
-## httpdocs以下
+## サーバーに存在するhttpdocs以下
 
 - attach
 - contact
@@ -74,3 +74,13 @@
   - 会場案内
 - whatsnew.html
 - winners.html
+
+
+## 夏学のサイトで作るものについての設計図
+
+基本的にそれぞれのページのデザインはcssファイル内に記述する. 
+- [レスポンシブ化](https://creive.me/archives/16922/#i)
+- 共通部分は分割する. 特に,footer.html と header.html は XXXX.htmlから分離.
+- メニュー内のhtmlファイルmenuフォルダに入れておく
+- 画像はpictireフォルダに入れる. 
+
