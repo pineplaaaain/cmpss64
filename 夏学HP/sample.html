@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="utf-8">
+
+<title>
+    物性若手夏の学校
+</title>
+<!-- ※デフォルトのスタイル（style.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="./style.css" />
+<!-- ※タブレット用のスタイル（tablet.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="./tablet.css" />
+<!-- ※スマートフォン用のスタイル（smart.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="./smart.css" />
+
+<!--※アイコン用(コンパスマークとか) -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+
+<!-- ヘッダーフッター読み込み -->
+<script>
+			//共通パーツ読み込み
+			 $(function() {
+			 $("#header").load("header.html");
+			 $("#footer").load("footer.html");
+			});
+</script>
+
+<!-- このページで用いるスタイル(本来cssに書くべき) -->
+<style>
+div.condition {
+	width: 40em;
+	position: relative;
+	padding: 0.5em 2.5em;
+	border: 1px solid black;
+}
+div.condition span.condition-title {
+	position: absolute;
+	display: inline-block;
+	top: -13px;
+	left: 10px;
+	padding: 0 9px;
+	line-height: 1;
+	background: #ffffff;
+}
+</style>
+
+<!-- 文書のヘッダ情報(メタデータの記述部分)終了 -->
+</head>
+
+<!-- 文書の本体 -->
+<body>
+
+<!-- ヘッダーを置いている-->
+<div id="header"></div>
+
+<!-- このページで書くこと -->
+<div id="container">
+
+
+<!--containerを閉じるもの -->
+</div>
+
+
+
+<!-- フッターを置いている-->
+<div id="footer"></div>
+
+<!-- 文書の本体終了 -->
+</body>
+
+<!-- HTML文書の終了 -->
+</html>
