@@ -51,7 +51,7 @@
 - kyosannegai.html (協賛のお願い)
 - main.html (メインページ)
 - omimai.html (お見舞いなど)
-- omimai20180710.html 
+- omimai20180710.html
 - owabi.html (お詫び用)
 - ryohi.html (旅費補助)
 - sankatouroku.html (参加登録)
@@ -67,7 +67,7 @@
 
 ## 夏学のサイトで作るものについての設計図
 
-- ページのスタイルは全てcssファイル内に記述する. 
+- ページのスタイルは全てcssファイル内に記述する.
 - [レスポンシブ化](https://creive.me/archives/16922/#i)を心がける
 - 共通部分は分割する. 特に,footer.html と header.html は XXXX.htmlから分離.
 - 画像はpicture/64thフォルダ(64は貴方の代の数字に置き換えてください)内に入れておく.
