@@ -1,371 +1,374 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 
-<meta charset="utf-8">
+    <meta charset="utf-8">
 
-<title>物性若手夏の学校</title>
+    <title>物性若手夏の学校</title>
 
-	<link rel="stylesheet" media="all" href="../style.css"/><!--※デフォルトのスタイル（style.css）-->
-	<link rel="stylesheet" media="all" type="text/css" href="../tablet.css"/> <!--※タブレット用のスタイル（tablet.css）-->
-	<link rel="stylesheet" media="all" type="text/css" href="../smart.css"/> <!--※スマートフォン用のスタイル（smart.css）-->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><!--※アイコン用(コンパスマークとか) -->
+    <link rel="stylesheet" media="all" href="../style.css" />
+    <!--※デフォルトのスタイル（style.css）-->
+    <link rel="stylesheet" media="all" type="text/css" href="../tablet.css" />
+    <!--※タブレット用のスタイル（tablet.css）-->
+    <link rel="stylesheet" media="all" type="text/css" href="../smart.css" />
+    <!--※スマートフォン用のスタイル（smart.css）-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--※アイコン用(コンパスマークとか) -->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>
-			//共通パーツ読み込み
-			 $(function() {
-			 $("#header").load("../header.html");
-			 $("#footer").load("../footer.html");
-			});
-	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        //共通パーツ読み込み
+        $(function() {
+            $("#header").load("../header.html");
+            $("#footer").load("../footer.html");
+        });
+    </script>
 
-<style>
-#content div.smartbox {
-	padding: 0.5em 0.2em;
-	margin-left: 1em;
-	border-left: 7px solid #7d89ff;
-}
-</style>
+    <style>
+        #content div.smartbox {
+            padding: 0.5em 0.2em;
+            margin-left: 1em;
+            border-left: 7px solid #7d89ff;
+        }
+    </style>
 
 </head>
 
 <body>
-<!--<div id="container2">-->
-
-<!--ここまで共通-->
-
-<div id="header"></div>
-<!-- ヘッダーを置いている-->
-
-<div id="container">
-
-<h2>プログラム</h2>
-
-<p>
-	第64回夏学のスケジュールです. 主なイベントには
-</p>
-
-<p style="margin-top: 0.1em; margin-bottom: 0.1em; text-align: center;">
-	<span class="markerlike">講義</span>&emsp;<span class="markerlike">集中ゼミ</span>&emsp;
-	<span class="markerlike">特別講義</span>&emsp;<span class="markerlike">分科会</span>&emsp;
-	<span class="markerlike">ポスターセッション</span>&emsp;
-	<span class="markerlike">グループセミナー</span>&emsp;
-	<span class="markerlike">フリーセッション</span>&emsp;
-	<span class="markerlike">座談会</span>
-</p>
-
-<p>
-といったものがあります. <strong>以下のスケジュール表はまだ更新途上です(特別講義が入ります)</strong> 
-</p>
-
-
-<table class="schedule">
-	<thead>
-		<th width="10%"></th>
-		<th width="18%">8月5日</th>
-		<th width="18%">8月6日</th>
-		<th width="18%">8月7日</th>
-		<th width="18%">8月8日</th>
-		<th width="18%">8月9日</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td>午前</td>
-			<td></td>
-			<td><a href="https://cmpss.jp/program/lecture.html">講義</a></td>
-			<td><a href="https://cmpss.jp/program/lecture.html">講義</a></td>
-			<td><a href="https://cmpss.jp/program/lecture.html">講義</a></td>
-			<td>チェックアウト<br>(12:00頃まで)</td>
-		</tr>
-		<tr>
-			<td>午後1</td>
-			<td>チェックイン<br>(15:00頃まで)</td>
-			<td><a href="https://cmpss.jp/program/ps.html">ポスター<br>セッション</a></td>
-			<td><a href="https://cmpss.jp/program/ps.html">ポスター<br>セッション</a></td>
-			<td><a href="https://cmpss.jp/program/fs.html">フリー<br>セッション</a></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>午後2</td>
-			<td>開校式</td>
-			<td><a href="https://cmpss.jp/program/seminar.html">集中ゼミ1</a></td>
-			<td><a href="https://cmpss.jp/program/sectionmeeting.html">分科会</a></td>
-			<td><a href="https://cmpss.jp/program/seminar.html">集中ゼミ2</a></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>夜</td>
-			<td><a href="https://cmpss.jp/program/gs.html">グループ<br>セミナー</a></td>
-			<td><a href="https://cmpss.jp/program/discussion.html">座談会</a>・懇談会</td>
-			<td>懇談会</td>
-			<td>閉校式・懇談会</td>
-			<td></td>
-		</tr>
-	</tbody>
-</table>
-
-
-<!-- それぞれの説明 -->
-<a id="event_setsumei"></a>
-
-<h2>講義</h2>
-
-<h3>特色</h3>
-
-<p >
-	第1回物性若手夏の学校より綿々と受け継がれてきたメインイベントです！
-	<br>
-	それぞれの専門分野において研究・教育の第一線で活躍されている先生方を講師に迎え, 基礎的な事項からやや発展的な内容をお話ししていただきます. 
-	<br>
-	研究の第一人者である先生方の考え方や物理観を学べる貴重な機会でありながら, 懇談会やフリーセッションといったコミュニケーションの場を十全に設けている点が夏学の特徴であり最大の魅力の一つと言えます
-	<br>
-	専門分野に近い講義を受ける, 未知の分野に挑戦してみる, 複数人でローテーションを組みノートをシェアし合う, 自分を6人用意し並列に講義に参加する, など自由なやり方でお聞きください. 
-	<br>
-	事前に公開される講義概要やテキスト, 夏学1日目の先生方直々の講義プレビューも参考とされると幸せかもしれません. 
-</p>
-
-<h3>実際の進行</h3>
-
-<p>
-	2日目から4日目の午前中に3時間ずつ, 合計9時間が講義に充てられます. <br>
-	板書形式かスライド形式かは担当講師の先生のご意向によって異なるので, 概要や参加者向けテキストを参照の上ご活用ください. <br>
-	受講者のレベルとしては, 物性物理を専門とする修士課程の学生を想定していますが, 量子力学や統計力学に慣れ親しんだ学部3年生でも十分ついていける内容になっていると思われます. <br>
-</p>
-
-<!-- 古いため変える予定 -->
-<div style="width: 65%; margin: 2em auto 2.5em;">
-	<img src="../picture/lecture.JPG" alt="講義のイメージ画像です. " width="100%;">
-</div>
-
-
-<a id="lecturelist"></a>
-<h3>第64回講義招待講師一覧(6名)</h3>
-
-<p style="margin-top: 0.5em; margin-bottom: 1.5em;">
-	今年度夏の学校の講師の方々です(敬称略). 講義タイトルのリンクからアブストラクトをご覧いただけます. 
-	<strong>現在, 未完成の部分もあることに注意してください. </strong>
-</p>
-
-
-<table class="lecture">
-	<thead>
-		<th>講師</th><th>所属</th><th>講義タイトル</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="http://phys.ipps.kumamoto-u.ac.jp/pltop/index-j.html">赤井 一郎</a></td>
-			<td>熊本大学 パルスパワー科学研究所 教授</td>
-			<td><a href="./lecture_abst.html#lec1">物性科学研究のためのデータ駆動科学</a></td>
-		</tr>
-		<tr>
-			<td><a href="https://sites.google.com/view/watanabegroup">渡邉 悠樹</a></td>
-			<td>東京大学大学院 工学系研究科 准教授</td>
-			<td><a href="./lecture_abst.html#lec2">対称性指標の基礎から高次トポロジカル絶縁体への応用まで</a></td>
-		</tr>
-		<tr>
-			<td><a href="https://www.nict.go.jp/frontier/mqp/index.html">仙場 浩一</a></td>
-			<td>情報通信研究機構 未来ICT研究所 上席研究員</td>
-			<td><a href="./lecture_abst.html#lec3">超伝導量子ビットの物理～基礎から最前線まで～</a></td>
-		</tr>
-		<tr>
-			<td><a href="http://ribf.riken.jp/~hidaka/Yoshimasa_Hidaka/Welcome.html">日高 義将</a></td>
-			<td>理化学研究所 数理創造プログラム 専任研究員</td>
-			<td><a href="./lecture_abst.html#lec4">対称性の自発的破れと量子的破れ</a></td>
-		</tr>
-		<tr>
-			<td><a href="http://www-waka.ics.es.osaka-u.ac.jp/~teramae/">寺前 順之介</a></td>
-			<td>京都大学大学院 情報学研究科 准教授</td>
-			<td><a href="./lecture_abst.html#lec5">脳と知能の物理学</a></td>
-		</tr>
-		<tr>
-			<td><a href="http://lab.kaztake.org/index-j.html">竹内 一将</a></td>
-			<td>東京大学大学院 理学系研究科 准教授</td>
-			<td><a href="./lecture_abst.html#lec6">KPZ普遍クラス ー厳密解と実験が奏でる非平衡のスケーリング則ー</a></td>
-		</tr>
-	</tbody>
-</table>
-
-
-
-
-
-<div style="margin-top: 1.5em;">
-
-
-<h2>集中ゼミ</h2>
-
-<h3>集中ゼミの概要</h3>
-
-<p style="margin-top: 0.5em; margin-bottom: 2em;">
-	集中ゼミでは, 講師としてお招きした先生方にご自身の研究について教えていただき, 各分野の最新のトピックをわかりやすく学べることが特徴です. 
-	<br>
-	ご本人から直接, 研究についてお話ししていただきますので, 大学の講義に比べより現場の物理に近い臨場感を味わうことができます. 
-	<br>
-	事前公開の概要やテキストを参考にして, 興味のあるテーマを選んでください.
-</p>
-
-<h3>集中ゼミの進め方</h3>
-
-<p style="margin-top: 0.5em; margin-bottom: 1em;">
-	集中ゼミは, 2日目の午後と4日目の午後の一枠にご自身の研究について3時間の講演をしていただきます. それぞれ6つずつ開講されます. <br>
-	わからないことや気にかかること, 文句をつけたいことについても, 遠慮することなく学生側からも積極的に質問をして活発な議論を展開しましょう.
-</p>
-
-
-<!-- 古いので変える予定 -->
-<div style="width: 50%; margin: 2em auto 2.5em;">
-	<img src="../picture/seminar.JPG" alt="集中ゼミのイメージ画像です. " width="100%;">
-</div>
-
-
-<a id="seminarlist"></a>
-
-<h4>第64回集中ゼミ招待講師一覧</h4>
-
-<p style="margin-top: 0.5em; margin-bottom: 1.5em;">
-	今年度夏の学校の講師の方々です(敬称略). 講義タイトルのリンクからアブストラクトをご覧いただけます. 
-	<strong>現在, 未完成の部分もあることに注意してください. </strong>
-</p>
-
-<table class="lecture">
-<caption>【集中ゼミ1 (2日目午後) 】</caption>
-	<thead>
-		<th>講師</th><th>所属</th><th>講義タイトル</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://itatani.issp.u-tokyo.ac.jp/">石井 順久</a></td>
-			<td>東京大学 物性研究所 助教</td>
-			<td><a href="./seminar1_abst.html#lec1">高強度極短光パルス源を用いた超高速光科学の最前線</a></td>
-		</tr>
-		<tr>
-			<td><a href="https://www.smapip.is.tohoku.ac.jp/~mohzeki/">大関 真之</a></td>
-			<td>東北大学大学院 情報科学研究科 准教授</td>
-			<td><a href="./seminar1_abst.html#lec2">量子アニーリングとその展望 ‐アカデミアとビジネスの間で起こること‐</a></td>
-		</tr>
-		<tr>
-			<td><a href="https://arpes.phys.tohoku.ac.jp/">佐藤 宇史</a></td>
-			<td>東北大学大学院 理学研究科 教授</td>
-			<td><a href="./seminar1_abst.html#lec3">トポロジカル絶縁体・半金属の電子構造</a></td>
-		</tr>
-		<tr>
-			<td><a href="http://www.s.phys.nagoya-u.ac.jp/">紺谷 浩</a></td>
-			<td>名古屋大学大学院 理学研究科 教授</td>
-			<td><a href="./seminar1_abst.html#lec4">非従来型超伝導体の理論:鉄系超伝導体を中心に</a></td>
-		</tr>
-		<tr>
-			<td><a href="http://www.qbic.riken.jp/mbd/furusawa/">古澤 力</a></td>
-			<td>理化学研究所 QBiC チームリーダー / 東京大学 理学系研究科 教授</td>
-			<td><a href="./seminar1_abst.html#lec5">生きている状態をどのように理解できるか ～理論と実験からのアプローチ～</a></td>
-		</tr>
-		<tr>
-			<td><a href="https://www.apph.tohoku.ac.jp/bio/index-jp.html">中山 洋平</a></td>
-			<td>東北大学大学院 工学系研究科 特任助教</td>
-			<td><a href="./seminar1_abst.html#lec6">ファインマンラチェットの熱‐仕事変換効率:有効モデルに潜む罠</a></td>
-		</tr>
-	</tbody>
-</table>
-
-
-<table class="lecture">
-<caption>【集中ゼミ2 (4日目午後) 】</caption>
-	<thead>
-		<th>講師</th><th>所属</th><th>講義タイトル</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="http://empty.matrix.jp/?lang=ja">馬場 基彰</a></td>
-			<td>科学技術振興機構 さきがけ研究者 / 大阪大学 基礎工学研究科</td>
-			<td><a href="./seminar2_abst.html#lec1">強は異なり:電磁場と物質の超強結合による超放射相転移に向けて</a></td>
-		</tr>
-		<tr>
-			<td><a href="http://spin.phys.s.u-tokyo.ac.jp/~mori/index_ja.html">森 貴司</a></td>
-			<td>理化学研究所 創発物性科学研究センター 研究員</td>
-			<td><a href="./seminar2_abst.html#lec2">孤立量子多体系の緩和の理論</a></td>
-		</tr>
-		<tr>
-			<td><a href="http://www.solis.t.u-tokyo.ac.jp/">今田 正俊</a></td>
-			<td>豊田理化学研究所 常勤フェロー / 早稲田大学 理工総研 研究院教授</td>
-			<td><a href="./seminar2_abst.html#lec3">電子相関が生み出す超伝導の姿</a></td>
-		</tr>
-		<tr>
-			<td><a href="http://www.stat.phys.titech.ac.jp/murakami/">村上 修一</a></td>
-			<td>東京工業大学大学院 理学院 教授</td>
-			<td><a href="./seminar2_abst.html#lec4">トポロジカル物質入門</a></td>
-		</tr>
-		<tr>
-			<td><a href="http://seeds.office.hiroshima-u.ac.jp/profile/ja.41f73402d6386fe2520e17560c007669.html">白石 允梓</a></td>
-			<td>広島大学大学院 統合生命科学研究科 特任助教</td>
-			<td><a href="./seminar2_abst.html#lec5">アリの行動観測とその統計解析</a></td>
-		</tr>
-		<tr>
-			<td><a href="http://www.math.cm.is.nagoya-u.ac.jp/~ozawa/">小澤 正直</a></td>
-			<td>名古屋大学大学院 情報学研究科 名誉教授</td>
-			<td><a href="./seminar2_abst.html#lec6">量子測定理論の進歩と不確定性原理</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<h2>特別講義</h2>
-
-<p style="margin-top: 0.5em; margin-bottom: 2em;">
-	約20年ぶりに特別講義が復活！今回は特別招待講師として,<a href="http://www.ton.scphys.kyoto-u.ac.jp/nonlinear-old2/kuramoto.html">蔵本 由紀</a></td>先生（京都大学　名誉教授）に「同期現象と縮約」というタイトルで1時間ほどご講演いただきます. 
-</p>
-
-<h4>特別講師の概要</h4>
-<p style="margin-top: 0.5em; margin-bottom: 1.5em;">
-	TBA
-</p>
-
-<h2>その他催しなど</h2>
-
-<h3>分科会</h3>
-
-<p style="margin-top: 0.5em; margin-bottom: 2em;">
-	発表希望者による口頭発表 (発表10分+質疑応答5分) を行う企画です. 学会等での発表を想定し, 研究内容を限られた時間でわかりやすく伝える練習をしたい, という方にオススメです. 詳しくは<a href="https://cmpss.jp/program/sectionmeeting.html">こちら</a>. 
-</p>
-
-
-<h3>グループセミナー (GS)</h3>
-
-<p style="margin-top: 0.5em; margin-bottom: 2em;">
-	4人程度のグループを組み, メンバーに対して自身の研究内容を発表し合う企画です. 少人数のゼミ形式で, 活発なディスカッションができると期待されます. 詳しくは<a href="https://cmpss.jp/program/gs.html">こちら</a>. 
-</p>
-
-
-<h3>ポスターセッション (PS)</h3>
-
-<p style="margin-top: 0.5em; margin-bottom: 2em;">
-	大きな会場を使い, 発表希望者のポスターを一斉に貼り出して行う企画です. 口頭発表とは異なり, 時間を気にせずしっかり話し合えることができるのが最大の魅力です. 詳しくは<a href="https://cmpss.jp/program/ps.html">こちら</a>. 
-</p>
-
-
-<h3>フリーセッション (FS)</h3>
-
-<p style="margin-top: 0.5em; margin-bottom: 2em;">
-	参加者同士の自由な議論を促進するための企画です. 時間の使い方は, 参加者に委ねられています. 最終日に行われるので, 分科会やGS, PS等での疑問点を踏まえた, 濃密な議論もできるでしょう. 詳しくは<a href="https://cmpss.jp/program/fs.html">こちら</a>. 
-</p>
-
-
-<h3>座談会</h3>
-
-<p style="margin-top: 0.5em;">
-	講師の先生方に研究生活のあれこれを訊いてみようという企画です. 詳しくは<a href="https://cmpss.jp/program/discussion.html">こちら</a>. 
-</p>
-
-</div>
-
-
-</div>
-<!--containerを閉じるもの -->
-
-
-<!-- フッターを置いている-->
-<div id="footer"></div>
-
-<!-- 文書の本体終了 -->
+    <!--<div id="container2">-->
+
+    <!--ここまで共通-->
+
+    <div id="header"></div>
+    <!-- ヘッダーを置いている-->
+
+    <div id="container">
+
+        <h2>プログラム</h2>
+
+        <p>
+            第64回夏学のスケジュールです. 主なイベントには
+        </p>
+
+        <p style="margin-top: 0.1em; margin-bottom: 0.1em; text-align: center;">
+            <span class="markerlike">講義</span>&emsp;<span class="markerlike">集中ゼミ</span>&emsp;
+            <span class="markerlike">特別講義</span>&emsp;<span class="markerlike">分科会</span>&emsp;
+            <span class="markerlike">ポスターセッション</span>&emsp;
+            <span class="markerlike">グループセミナー</span>&emsp;
+            <span class="markerlike">フリーセッション</span>&emsp;
+            <span class="markerlike">座談会</span>
+        </p>
+
+        <p>
+            といったものがあります. <strong>以下のスケジュール表はまだ更新途上です(特別講義が入ります)</strong>
+        </p>
+
+
+        <table class="schedule">
+            <thead>
+                <th width="10%"></th>
+                <th width="18%">8月5日</th>
+                <th width="18%">8月6日</th>
+                <th width="18%">8月7日</th>
+                <th width="18%">8月8日</th>
+                <th width="18%">8月9日</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>午前</td>
+                    <td></td>
+                    <td><a href="https://cmpss.jp/program/lecture.html">講義</a></td>
+                    <td><a href="https://cmpss.jp/program/lecture.html">講義</a></td>
+                    <td><a href="https://cmpss.jp/program/lecture.html">講義</a></td>
+                    <td>チェックアウト<br>(12:00頃まで)</td>
+                </tr>
+                <tr>
+                    <td>午後1</td>
+                    <td>チェックイン<br>(15:00頃まで)</td>
+                    <td><a href="https://cmpss.jp/program/ps.html">ポスター<br>セッション</a></td>
+                    <td><a href="https://cmpss.jp/program/ps.html">ポスター<br>セッション</a></td>
+                    <td><a href="https://cmpss.jp/program/fs.html">フリー<br>セッション</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>午後2</td>
+                    <td>開校式</td>
+                    <td><a href="https://cmpss.jp/program/seminar.html">集中ゼミ1</a></td>
+                    <td><a href="https://cmpss.jp/program/sectionmeeting.html">分科会</a></td>
+                    <td><a href="https://cmpss.jp/program/seminar.html">集中ゼミ2</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>夜</td>
+                    <td><a href="https://cmpss.jp/program/gs.html">グループ<br>セミナー</a></td>
+                    <td><a href="https://cmpss.jp/program/discussion.html">座談会</a>・懇談会</td>
+                    <td>懇談会</td>
+                    <td>閉校式・懇談会</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!-- それぞれの説明 -->
+        <a id="event_setsumei"></a>
+
+        <h2>講義</h2>
+
+        <h3>特色</h3>
+
+        <p>
+            第1回物性若手夏の学校より綿々と受け継がれてきたメインイベントです！
+            <br> それぞれの専門分野において研究・教育の第一線で活躍されている先生方を講師に迎え, 基礎的な事項からやや発展的な内容をお話ししていただきます.
+            <br> 研究の第一人者である先生方の考え方や物理観を学べる貴重な機会でありながら, 懇談会やフリーセッションといったコミュニケーションの場を十全に設けている点が夏学の特徴であり最大の魅力の一つと言えます
+            <br> 専門分野に近い講義を受ける, 未知の分野に挑戦してみる, 複数人でローテーションを組みノートをシェアし合う, 自分を6人用意し並列に講義に参加する, など自由なやり方でお聞きください.
+            <br> 事前に公開される講義概要やテキスト, 夏学1日目の先生方直々の講義プレビューも参考とされると幸せかもしれません.
+        </p>
+
+        <h3>実際の進行</h3>
+
+        <p>
+            2日目から4日目の午前中に3時間ずつ, 合計9時間が講義に充てられます. <br> 板書形式かスライド形式かは担当講師の先生のご意向によって異なるので, 概要や参加者向けテキストを参照の上ご活用ください. <br> 受講者のレベルとしては, 物性物理を専門とする修士課程の学生を想定していますが, 量子力学や統計力学に慣れ親しんだ学部3年生でも十分ついていける内容になっていると思われます. <br>
+        </p>
+
+        <!-- 古いため変える予定 -->
+        <div style="width: 65%; margin: 2em auto 2.5em;">
+            <img src="../picture/lecture.JPG" alt="講義のイメージ画像です. " width="100%;">
+        </div>
+
+
+        <a id="lecturelist"></a>
+        <h3>第64回講義招待講師一覧(6名)</h3>
+
+        <p style="margin-top: 0.5em; margin-bottom: 1.5em;">
+            今年度夏の学校の講師の方々です(敬称略). 講義タイトルのリンクからアブストラクトをご覧いただけます.
+            <strong>現在, 未完成の部分もあることに注意してください. </strong>
+        </p>
+
+
+        <table class="lecture">
+            <thead>
+                <th>講師</th>
+                <th>所属</th>
+                <th>講義タイトル</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="http://phys.ipps.kumamoto-u.ac.jp/pltop/index-j.html">赤井 一郎</a></td>
+                    <td>熊本大学 パルスパワー科学研究所 教授</td>
+                    <td><a href="./lecture_abst.html#lec1">物性科学研究のためのデータ駆動科学</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://sites.google.com/view/watanabegroup">渡邉 悠樹</a></td>
+                    <td>東京大学大学院 工学系研究科 准教授</td>
+                    <td><a href="./lecture_abst.html#lec2">対称性指標の基礎から高次トポロジカル絶縁体への応用まで</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.nict.go.jp/frontier/mqp/index.html">仙場 浩一</a></td>
+                    <td>情報通信研究機構 未来ICT研究所 上席研究員</td>
+                    <td><a href="./lecture_abst.html#lec3">超伝導量子ビットの物理～基礎から最前線まで～</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://ribf.riken.jp/~hidaka/Yoshimasa_Hidaka/Welcome.html">日高 義将</a></td>
+                    <td>理化学研究所 数理創造プログラム 専任研究員</td>
+                    <td><a href="./lecture_abst.html#lec4">対称性の自発的破れと量子的破れ</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://www-waka.ics.es.osaka-u.ac.jp/~teramae/">寺前 順之介</a></td>
+                    <td>京都大学大学院 情報学研究科 准教授</td>
+                    <td><a href="./lecture_abst.html#lec5">脳と知能の物理学</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://lab.kaztake.org/index-j.html">竹内 一将</a></td>
+                    <td>東京大学大学院 理学系研究科 准教授</td>
+                    <td><a href="./lecture_abst.html#lec6">KPZ普遍クラス ー厳密解と実験が奏でる非平衡のスケーリング則ー</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+        <div style="margin-top: 1.5em;">
+
+
+            <h2>集中ゼミ</h2>
+
+            <h3>集中ゼミの概要</h3>
+
+            <p style="margin-top: 0.5em; margin-bottom: 2em;">
+                集中ゼミでは, 講師としてお招きした先生方にご自身の研究について教えていただき, 各分野の最新のトピックをわかりやすく学べることが特徴です.
+                <br> ご本人から直接, 研究についてお話ししていただきますので, 大学の講義に比べより現場の物理に近い臨場感を味わうことができます.
+                <br> 事前公開の概要やテキストを参考にして, 興味のあるテーマを選んでください.
+            </p>
+
+            <h3>集中ゼミの進め方</h3>
+
+            <p style="margin-top: 0.5em; margin-bottom: 1em;">
+                集中ゼミは, 2日目の午後と4日目の午後の一枠にご自身の研究について3時間の講演をしていただきます. それぞれ6つずつ開講されます. <br> わからないことや気にかかること, 文句をつけたいことについても, 遠慮することなく学生側からも積極的に質問をして活発な議論を展開しましょう.
+            </p>
+
+
+            <!-- 古いので変える予定 -->
+            <div style="width: 50%; margin: 2em auto 2.5em;">
+                <img src="../picture/seminar.JPG" alt="集中ゼミのイメージ画像です. " width="100%;">
+            </div>
+
+
+            <a id="seminarlist"></a>
+
+            <h4>第64回集中ゼミ招待講師一覧</h4>
+
+            <p style="margin-top: 0.5em; margin-bottom: 1.5em;">
+                今年度夏の学校の講師の方々です(敬称略). 講義タイトルのリンクからアブストラクトをご覧いただけます.
+                <strong>現在, 未完成の部分もあることに注意してください. </strong>
+            </p>
+
+            <table class="lecture">
+                <caption>【集中ゼミ1 (2日目午後) 】</caption>
+                <thead>
+                    <th>講師</th>
+                    <th>所属</th>
+                    <th>講義タイトル</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="http://empty.matrix.jp/?lang=ja">馬場 基彰</a></td>
+                        <td>科学技術振興機構 さきがけ研究者 / 大阪大学 基礎工学研究科</td>
+                        <td><a href="./seminar2_abst.html#lec1">強は異なり:電磁場と物質の超強結合による超放射相転移に向けて</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.smapip.is.tohoku.ac.jp/~mohzeki/">大関 真之</a></td>
+                        <td>東北大学大学院 情報科学研究科 准教授</td>
+                        <td><a href="./seminar1_abst.html#lec2">量子アニーリングとその展望 ‐アカデミアとビジネスの間で起こること‐</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.solis.t.u-tokyo.ac.jp/">今田 正俊</a></td>
+                        <td>豊田理化学研究所 常勤フェロー / 早稲田大学 理工総研 研究院教授</td>
+                        <td><a href="./seminar2_abst.html#lec3">電子相関が生み出す超伝導の姿</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.stat.phys.titech.ac.jp/murakami/">村上 修一</a></td>
+                        <td>東京工業大学大学院 理学院 教授</td>
+                        <td><a href="./seminar2_abst.html#lec4">トポロジカル物質入門</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.qbic.riken.jp/mbd/furusawa/">古澤 力</a></td>
+                        <td>理化学研究所 QBiC チームリーダー / 東京大学 理学系研究科 教授</td>
+                        <td><a href="./seminar1_abst.html#lec5">生きている状態をどのように理解できるか ～理論と実験からのアプローチ～</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.math.cm.is.nagoya-u.ac.jp/~ozawa/">小澤 正直</a></td>
+                        <td>名古屋大学大学院 情報学研究科 名誉教授</td>
+                        <td><a href="./seminar2_abst.html#lec6">量子測定理論の進歩と不確定性原理</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <table class="lecture">
+                <caption>【集中ゼミ2 (4日目午後) 】</caption>
+                <thead>
+                    <th>講師</th>
+                    <th>所属</th>
+                    <th>講義タイトル</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://itatani.issp.u-tokyo.ac.jp/">石井 順久</a></td>
+                        <td>東京大学 物性研究所 助教</td>
+                        <td><a href="./seminar1_abst.html#lec1">高強度極短光パルス源を用いた超高速光科学の最前線</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://spin.phys.s.u-tokyo.ac.jp/~mori/index_ja.html">森 貴司</a></td>
+                        <td>理化学研究所 創発物性科学研究センター 研究員</td>
+                        <td><a href="./seminar2_abst.html#lec2">孤立量子多体系の緩和の理論</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://arpes.phys.tohoku.ac.jp/">佐藤 宇史</a></td>
+                        <td>東北大学大学院 理学研究科 教授</td>
+                        <td><a href="./seminar1_abst.html#lec3">トポロジカル絶縁体・半金属の電子構造</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.s.phys.nagoya-u.ac.jp/">紺谷 浩</a></td>
+                        <td>名古屋大学大学院 理学研究科 教授</td>
+                        <td><a href="./seminar1_abst.html#lec4">非従来型超伝導体の理論:鉄系超伝導体を中心に</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://seeds.office.hiroshima-u.ac.jp/profile/ja.41f73402d6386fe2520e17560c007669.html">白石 允梓</a></td>
+                        <td>広島大学大学院 統合生命科学研究科 特任助教</td>
+                        <td><a href="./seminar2_abst.html#lec5">アリの行動観測とその統計解析</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.apph.tohoku.ac.jp/bio/index-jp.html">中山 洋平</a></td>
+                        <td>東北大学大学院 工学系研究科 特任助教</td>
+                        <td><a href="./seminar1_abst.html#lec6">ファインマンラチェットの熱‐仕事変換効率:有効モデルに潜む罠</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>特別講義(4日目午後)</h2>
+
+            <p style="margin-top: 0.5em; margin-bottom: 2em;">
+                約20年ぶりに特別講義が復活！今回は特別招待講師として,<a href="http://www.ton.scphys.kyoto-u.ac.jp/nonlinear-old2/kuramoto.html">蔵本 由紀</a></td>先生（京都大学　名誉教授）に「同期現象と縮約」というタイトルで1時間ほどご講演いただきます.
+            </p>
+
+            <h4>特別講師の概要</h4>
+            <p style="margin-top: 0.5em; margin-bottom: 1.5em;">
+                TBA
+            </p>
+
+            <h2>その他催しなど</h2>
+
+            <h3>分科会</h3>
+
+            <p style="margin-top: 0.5em; margin-bottom: 2em;">
+                発表希望者による口頭発表 (発表10分+質疑応答5分) を行う企画です. 学会等での発表を想定し, 研究内容を限られた時間でわかりやすく伝える練習をしたい, という方にオススメです. 詳しくは<a href="https://cmpss.jp/program/sectionmeeting.html">こちら</a>.
+            </p>
+
+
+            <h3>グループセミナー (GS)</h3>
+
+            <p style="margin-top: 0.5em; margin-bottom: 2em;">
+                4人程度のグループを組み, メンバーに対して自身の研究内容を発表し合う企画です. 少人数のゼミ形式で, 活発なディスカッションができると期待されます. 詳しくは<a href="https://cmpss.jp/program/gs.html">こちら</a>.
+            </p>
+
+
+            <h3>ポスターセッション (PS)</h3>
+
+            <p style="margin-top: 0.5em; margin-bottom: 2em;">
+                大きな会場を使い, 発表希望者のポスターを一斉に貼り出して行う企画です. 口頭発表とは異なり, 時間を気にせずしっかり話し合えることができるのが最大の魅力です. 詳しくは<a href="https://cmpss.jp/program/ps.html">こちら</a>.
+            </p>
+
+
+            <h3>フリーセッション (FS)</h3>
+
+            <p style="margin-top: 0.5em; margin-bottom: 2em;">
+                参加者同士の自由な議論を促進するための企画です. 時間の使い方は, 参加者に委ねられています. 最終日に行われるので, 分科会やGS, PS等での疑問点を踏まえた, 濃密な議論もできるでしょう. 詳しくは<a href="https://cmpss.jp/program/fs.html">こちら</a>.
+            </p>
+
+
+            <h3>座談会</h3>
+
+            <p style="margin-top: 0.5em;">
+                講師の先生方に研究生活のあれこれを訊いてみようという企画です. 詳しくは<a href="https://cmpss.jp/program/discussion.html">こちら</a>.
+            </p>
+
+        </div>
+
+
+    </div>
+    <!--containerを閉じるもの -->
+
+
+    <!-- フッターを置いている-->
+    <div id="footer"></div>
+
+    <!-- 文書の本体終了 -->
 </body>
 
 <!-- HTML文書の終了 -->
+
 </html>
