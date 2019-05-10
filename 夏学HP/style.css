@@ -603,6 +603,9 @@
         color: #f8f8ff;
         text-decoration: none;
     }
+    #foot a:link {
+        color: #f8f8ff;
+     }
     #foot {
         margin-top: 50px;
         padding: 10px 20px;
