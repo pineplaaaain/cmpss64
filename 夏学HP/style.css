@@ -181,6 +181,7 @@
     #pagetop table.title tr td.english {
         color: #5d4deb;
         font-family: serif;
+        text-shadow: -1px -1px 0px white, 1px -1px 0px white, 1px 1px 0px white, -1px 1px 0px white;
         line-height: 0%;
     }
     #pagetop table.catch {
@@ -196,6 +197,7 @@
         font-weight: bold;
         font-size: 2.5em;
         font-family: cursive;
+        text-shadow: -1px -1px 0px white, 1px -1px 0px white, 1px 1px 0px white, -1px 1px 0px white;
         line-height: 125%;
     }
     #pagetop table.catch tr td.kaijou {
@@ -204,6 +206,7 @@
         font-weight: bold;
         font-size: 1em;
         font-family: arial;
+        text-shadow: -1px -1px 0px white, 1px -1px 0px white, 1px 1px 0px white, -1px 1px 0px white;
     }
     #pagetop table.catch tr td.nichiji {
         text-align: right;
@@ -211,6 +214,7 @@
         font-weight: bold;
         font-size: 1em;
         font-family: Gramond;
+        text-shadow: -1px -1px 0px white, 1px -1px 0px white, 1px 1px 0px white, -1px 1px 0px white;
     }
     /* --- ドロップダウンメニュー --- */
     #gmenu {
