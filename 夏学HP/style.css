@@ -606,6 +606,9 @@
     #foot a:link {
         color: #f8f8ff;
      }
+     #foot a:visited {
+        color: #99a6d8;
+     }
     #foot {
         margin-top: 50px;
         padding: 10px 20px;
